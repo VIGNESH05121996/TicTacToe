@@ -8,18 +8,26 @@ namespace TicTacToe
 {
     public class TicTactoeGameClass
     {
-        public void NewBoard()
+        public char[] NewBoard()
         {
-            char[] arr = new char[10];
-            arr[1] = ' ';
-            arr[2] = ' ';
-            arr[3] = ' ';
-            arr[4] = ' ';
-            arr[5] = ' ';
-            arr[6] = ' ';
-            arr[7] = ' ';
-            arr[8] = ' ';
-            arr[9] = ' ';
+            char[] board = new char[10];
+            for(int i=1;i<board.Length;i++)
+            {
+                board[i] = ' ';
+            }
+            return board;
+        }
+
+        public void ChooseLetter()
+        {
+            Console.WriteLine("\nPlayer: Enter The letter");
+            char playerLetter = Convert.ToChar(Console.ReadLine());
+            Console.WriteLine("\nPlayer Letter is" + playerLetter);
+
+            char computerLetter='O';
+            Console.WriteLine("\nComputer Letter is" + computerLetter);
+           
+
         }
     }
 }
