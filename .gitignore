@@ -1,0 +1,7 @@
+./
+../
+.vs/
+TicTacToe/
+bin/
+obj/
+bin/Debug/
